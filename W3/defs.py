@@ -28,6 +28,7 @@ def plot_decision_regions(X, y, classifier, test_idx=None, resolution=0.02):
     # setup marker generator and color map
     markers = ('s', 'x', 'o', '^', 'v')
     colors = ('red', 'blue', 'lightgreen', 'gray', 'cyan')
+    plot_colortable(mcolors.CSS4_COLORS)
     cmap = ListedColormap(colors[:len(np.unique(y))])
 
     # plot the decision surface
